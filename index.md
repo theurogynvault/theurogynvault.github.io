@@ -8,13 +8,11 @@ header:
   actions:
     - label: "Start Reading"
       url: "#trials"
-excerpt: "Urogynecology Landmark Trials — concise, physician-level summaries."
+excerpt: "A curated vault all about Urogynecology - for students, residents, fellows and lifelong learners."
 ---
-# About
-A curated vault all about Urogynecology - for students, residents, fellows and lifelong learners.
+# Our why
 - Inspired by Dr Jocelyn Fitzgerald's [Landmark Urogyn Trials](https://landmark-urogyn-trials.glide.page/)
-- Concise, evidence-based notes designed for a quick review before clinic or the OR.
-- Optimized for board prep and teaching. 
+- Concise, evidence-based notes designed for a quick review before clinic, the OR, or teaching each other.
 ---
 
 ## Urogyn Landmark Trials (curated from Dr.Fitzgerald's list)
