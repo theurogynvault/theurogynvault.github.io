@@ -3,8 +3,8 @@ title: "PelvicScope"
 layout: splash
 permalink: /
 header:
-  overlay_color: "#2a2a2a"   # backdrop color (dark gray)
-  overlay_filter: "0.4"      # transparency: 0.0 clear → 1.0 solid
+  overlay_color: "#2a2a2a"
+  overlay_filter: "0.4"
   actions:
     - label: "Start Reading"
       url: "#trials"
@@ -34,3 +34,45 @@ A curated educational resource for **urogynecology landmark trials**, built for 
 
 ## About
 PelvicScope is maintained by physicians in training, committed to open-access medical education.  
+
+---
+
+<!-- 🌓 Dark/Light mode toggle -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const btn = document.createElement("div");
+  btn.innerText = "🌓";
+  btn.className = "mode-toggle";
+  btn.onclick = () => document.body.classList.toggle("dark-mode");
+  document.body.appendChild(btn);
+});
+</script>
+
+<style>
+/* Toggle button */
+.mode-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #444;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 9999;
+  user-select: none;
+}
+
+/* Default Light Mode */
+body {
+  background: #ffffff;
+  color: #111111;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #111111;
+  color: #f4f4f4;
+}
+</style>
