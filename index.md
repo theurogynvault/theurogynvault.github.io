@@ -20,6 +20,13 @@ Dr.Fitzgerald's [Landmark Urogyn Trials List](https://landmark-urogyn-trials.gli
 - [**OPTIMAL Trial**](optimal.md) – Apical suspension techniques  
 
 ---
+## Urogyn Dot phrases for EMR (Designed for Epic)
+Concise, de-cluttered Urogyn dot phrases to reclaim your time for better patient care.
+- [**New & Return Patient H&P**]() - New Patient
+- [**Pessary fitting/maintenance**]() - Pessary fitting/maintenance
+- [**Post-op Visit**]() - Post-op visit
+- [**Common Telephone/MyCharts**] - Common Telephone/MyCharts
+---
 
 <!-- 🌓 Dark/Light mode toggle -->
 <script>
