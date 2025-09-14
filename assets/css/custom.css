@@ -23,16 +23,16 @@ h3 {
 
 /* Default (light mode) */
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #f2f2f2;
   --text-color: #000000;
-  --link-color: #0366d6;
+  --link-color: #0071bc;
 }
 
 /* Dark mode overrides */
 [data-theme="dark"] {
-  --bg-color: #000000;
+  --bg-color: #263238;
   --text-color: #ffffff;
-  --link-color: #0366d6;
+  --link-color: #0071bc;
 }
 
 /* Apply variables */
