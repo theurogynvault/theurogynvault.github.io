@@ -14,13 +14,24 @@ body {
   padding: 0;
 }
 
-/* Widen content area */
+/* Wider text on desktops, normal on mobile */
 .page__content,
 .page__inner-wrap,
 .page {
-  max-width: 1100px !important;
+  max-width: 1200px !important;  /* desktop width */
   margin: 0 auto !important;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .page__content,
+  .page__inner-wrap,
+  .page {
+    max-width: 95% !important;  /* mobile: nearly full width */
+    padding: 0 1rem;
+  }
+}
+
 }
 
 /* Headings */
