@@ -10,24 +10,18 @@ header:
       url: "#trials"
 excerpt: "Urogynecology Landmark Trials — concise, physician-level summaries."
 ---
-
-# Welcome to the Urogyn Vault
+# About
 A curated vault all about Urogynecology - for students, residents, fellows and lifelong learners.
-- Inspired by Dr Jocelyn Fitzgerald's [Landmark Urogyn Trials] (https://landmark-urogyn-trials.glide.page/)
+- Inspired by Dr Jocelyn Fitzgerald's [Landmark Urogyn Trials](https://landmark-urogyn-trials.glide.page/)
 - Concise, evidence-based notes designed for a quick review before clinic or the OR.
 - Optimized for board prep and teaching. 
-
 ---
 
-## Featured Trials {#trials}
+## Urogyn Landmark Trials (curated from Dr.Fitzgerald's list)
 - [**ABC Trial**](abc.md) – Sling vs Burch for stress incontinence  
 - [**ATLAS Trial**](atlas.md) – Behavioral therapy vs surgery outcomes  
 - [**OPTIMAL Trial**](optimal.md) – Apical suspension techniques  
 
----
-
-## About
-PelvicScope is maintained by physicians in training, committed to open-access medical education.  
 
 ---
 
@@ -56,6 +50,17 @@ document.addEventListener("DOMContentLoaded", function(){
   font-size: 1.2rem;
   z-index: 9999;
   user-select: none;
+  /* Default Light Mode highlight */
+::selection {
+  background: #111111;
+  color: #ffffff;
+}
+
+/* Dark Mode highlight override */
+body.dark-mode ::selection {
+  background: #ffffff;
+  color: #111111;
+}
 }
 
 /* Default Light Mode */
