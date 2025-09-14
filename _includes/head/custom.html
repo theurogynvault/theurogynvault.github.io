@@ -1,14 +1,26 @@
-<button id="theme-toggle">🌑</button>
+<button id="theme-toggle">🌙</button>
 <script>
-  const toggleBtn = document.getElementById('theme-toggle');
-  const savedTheme = localStorage.getItem('theme');
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('theme');
 
-  // Apply saved theme on load
-  if (savedTheme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    toggleBtn.textContent = '☀️'; // Show sun if dark mode active
-  }
+    // Apply saved theme on load
+    if (savedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      toggleBtn.textContent = '🌞';
+    }
 
-  toggleBtn.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    if (currentTheme === '
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      if (currentTheme === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        toggleBtn.textContent = '🌙';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        toggleBtn.textContent = '🌞';
+      }
+    });
+  });
+</script>
