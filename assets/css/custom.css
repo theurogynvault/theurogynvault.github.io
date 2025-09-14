@@ -160,3 +160,27 @@ body.dark-mode ::selection { background: #bb86fc; color: #121212; }
 #theme-toggle:hover {
   background: #333333;
 }
+
+/* Search bar styling */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem auto;
+  width: 100%;
+}
+
+#search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+#search-input:focus {
+  border-color: #6750a4;
+  box-shadow: 0 0 4px rgba(103, 80, 164, 0.5);
+}
