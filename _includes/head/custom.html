@@ -1,9 +1,9 @@
-<!-- 🌙 Dark/Light Mode Toggle -->
+<!-- 🌙 Dark/Light Mode Toggle + Purple Accent Theme -->
 <script>
 document.addEventListener("DOMContentLoaded", function(){
   const btn = document.createElement("div");
   btn.id = "theme-toggle";
-  btn.innerText = "🌙";   // always same emoji
+  btn.innerText = "🌙";   // single emoji button
   document.body.appendChild(btn);
 
   // Apply saved theme
@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", function(){
 </script>
 
 <style>
-/* Toggle button (always black background) */
+/* =========================================
+   TOGGLE BUTTON
+========================================= */
 #theme-toggle {
   position: fixed;
   top: 1rem;
@@ -37,27 +39,85 @@ document.addEventListener("DOMContentLoaded", function(){
   user-select: none;
 }
 
-/* Default Light Mode */
+/* =========================================
+   LIGHT MODE (default)
+========================================= */
 body {
   background: #ffffff;
   color: #111111;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-/* Dark Mode */
-body.dark-mode {
-  background: #000000;
-  color: #f4f4f4;
+/* Headers (purple accent) */
+h1, h2, h3, h4, h5, h6 {
+  color: #6A1B9A; /* deep purple */
+  font-weight: 600;
 }
 
-/* Highlight (Light Mode) */
+/* Links */
+a {
+  color: #6A1B9A;
+}
+a:hover {
+  color: #9C27B0;
+}
+
+/* Text highlight */
 ::selection {
-  background: #111111;
+  background: #6A1B9A;
   color: #ffffff;
 }
 
-/* Highlight (Dark Mode) */
+/* =========================================
+   DARK MODE (Material-inspired)
+========================================= */
+body.dark-mode {
+  background: #121212; /* Material dark baseline */
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 17px; /* slight bump for readability */
+}
+
+/* Masthead / Navigation */
+body.dark-mode .masthead,
+body.dark-mode .masthead__inner-wrap,
+body.dark-mode .nav,
+body.dark-mode .site-title,
+body.dark-mode .greedy-nav {
+  background: #1E1E1E !important;
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+body.dark-mode .masthead a,
+body.dark-mode .nav a {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+body.dark-mode .masthead a:hover,
+body.dark-mode .nav a:hover {
+  color: #BB86FC !important; /* purple accent */
+}
+
+/* Headers (purple accent in dark mode) */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #BB86FC;
+  font-weight: 600;
+}
+
+/* Links in body */
+body.dark-mode a {
+  color: #BB86FC;
+}
+body.dark-mode a:hover {
+  color: #9C27B0;
+}
+
+/* Text highlight in dark mode */
 body.dark-mode ::selection {
-  background: #ffffff;
-  color: #000000;
+  background: #BB86FC;
+  color: #121212;
 }
 </style>
