@@ -14,7 +14,7 @@ excerpt: "A curated vault all about Urogynecology - for students, residents, fel
 ---
 
 ## Urogyn Landmark Trials
-Dr.Fitzgerald's [Landmark Urogyn Trials List](https://landmark-urogyn-trials.glide.page/))
+Dr. Fitzgerald's [Landmark Urogyn Trials List](https://landmark-urogyn-trials.glide.page/)
 - [**ABC Trial**](abc.md) – Sling vs Burch for stress incontinence  
 - [**ATLAS Trial**](atlas.md) – Behavioral therapy vs surgery outcomes  
 - [**OPTIMAL Trial**](optimal.md) – Apical suspension techniques  
