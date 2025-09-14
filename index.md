@@ -12,13 +12,10 @@ excerpt: "Urogynecology Landmark Trials — concise, physician-level summaries."
 ---
 
 # Welcome to the Urogyn Vault
-
 A curated vault all about Urogynecology - for students, residents, fellows and lifelong learners.
-- Inspired by Dr Jocelyn Fitzgerald's Landmark Urogyn Trials 
-- Concise, evidence-based notes  
-- Organized by trial  
-- Designed for quick review before clinic or OR  
-- Optimized for board prep and teaching  
+- Inspired by Dr Jocelyn Fitzgerald's [Landmark Urogyn Trials] (https://landmark-urogyn-trials.glide.page/)
+- Concise, evidence-based notes designed for a quick review before clinic or the OR.
+- Optimized for board prep and teaching. 
 
 ---
 
