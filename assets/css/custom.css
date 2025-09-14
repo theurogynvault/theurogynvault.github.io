@@ -10,6 +10,16 @@ h1 {
 }
 h2 {
   font-size: 1.5rem; /* ~24px */
+  /* Light mode H2 (teal/blue-green) */
+h2 {
+  color: #008080; /* teal */
+}
+
+/* Dark mode H2 (lighter teal for contrast) */
+body.dark-mode h2 {
+  color: #4FD1C5; /* light teal */
+}
+
 }
 h3 {
   font-size: 1.25rem; /* ~20px */
