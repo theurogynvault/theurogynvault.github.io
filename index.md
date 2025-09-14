@@ -1,5 +1,5 @@
 ---
-title: "PelvicScope"
+title: "The Urogyn Vault"
 layout: splash
 permalink: /
 header:
@@ -11,13 +11,10 @@ header:
 excerpt: "Urogynecology Landmark Trials — concise, physician-level summaries."
 ---
 
-# Welcome to **PelvicScope**
+# Welcome to the Urogyn Vault
 
-A curated educational resource for **urogynecology landmark trials**, built for physicians, trainees, and researchers.
-
----
-
-## Why PelvicScope?
+A curated vault all about Urogynecology - for students, residents, fellows and lifelong learners.
+- Inspired by Dr Jocelyn Fitzgerald's Landmark Urogyn Trials 
 - Concise, evidence-based notes  
 - Organized by trial  
 - Designed for quick review before clinic or OR  
