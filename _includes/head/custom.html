@@ -29,3 +29,26 @@ document.addEventListener("DOMContentLoaded", function(){
   <script src="{{ '/assets/js/lunr/lunr-store.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/lunr/lunr-en.js' | relative_url }}"></script>
 {% endif %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const icon = document.getElementById("search-icon");
+  const input = document.getElementById("search-input");
+
+  // Toggle search bar open/close
+  icon.addEventListener("click", () => {
+    input.classList.toggle("active");
+    if (input.classList.contains("active")) {
+      input.focus();
+    }
+  });
+
+  // Close search bar if clicking outside
+  document.addEventListener("click", (e) => {
+    if (!icon.contains(e.target) && !input.contains(e.target)) {
+      input.classList.remove("active");
+    }
+  });
+});
+</script>
+
