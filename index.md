@@ -1,5 +1,5 @@
 ---
-title: "Welcome to The Urogyn Vault!"
+title: "Welcome to 🏦The Urogyn Vault!"
 layout: splash
 permalink: /
 header:
@@ -26,6 +26,7 @@ Concise, de-cluttered Urogyn dot phrases to reclaim your time for better patient
 - [**Pessary fitting/maintenance**]() - Pessary fitting/maintenance
 - [**Post-op Visit**]() - Post-op visit
 - [**Common Telephone/MyCharts**] - Common Telephone/MyCharts
+
 ---
 
 <!-- 🌓 Dark/Light mode toggle -->
