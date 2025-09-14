@@ -1,35 +1,85 @@
+/* =========================================
+   BASE TYPOGRAPHY
+========================================= */
+
 /* Base font size */
 body {
-  font-size: 16px;   /* default is ~18px */
-  line-height: 1.2;  /* adjust spacing */
+  font-size: 16px;        /* default text size */
+  line-height: 1.6;       /* good readability */
 }
 
-/* Headings */
+/* Headings hierarchy */
 h1 {
-  font-size: 2rem;   /* ~24px */
+  font-size: 2rem;        /* ~32px */
+  font-weight: 700;
+  color: #6A1B9A;         /* purple accent (light mode) */
 }
-
 h2 {
-  font-size: 1.5rem; /* ~20px */
+  font-size: 1.5rem;      /* ~24px */
+  font-weight: 600;
+  color: #6A1B9A;
 }
-
 h3 {
-  font-size: 1.25rem; /* ~18px */
+  font-size: 1.25rem;     /* ~20px */
+  font-weight: 600;
   font-style: italic;
+  color: #6A1B9A;
+}
+h4 {
+  font-size: 1.1rem;      /* ~18px */
+  font-weight: 500;
+  color: #6A1B9A;
+}
+h5 {
+  font-size: 1rem;        /* ~16px */
+  font-weight: 500;
+  color: #6A1B9A;
+}
+h6 {
+  font-size: 0.9rem;      /* ~14px */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6A1B9A;
 }
 
-/* 🌙 Material-Inspired Dark Theme */
-
-/* Default Light Mode */
-body {
-  background: #ffffff;
-  color: #111111;
+/* Paragraphs & lists */
+p, li {
+  font-size: 1rem;        /* ~16px */
+  line-height: 1.6;
+  color: inherit;
 }
 
-/* Dark Mode */
+/* Blockquotes */
+blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  opacity: 0.9;
+  border-left: 4px solid #6A1B9A;
+  padding-left: 1rem;
+}
+
+/* Links */
+a {
+  color: #6A1B9A;
+}
+a:hover {
+  color: #9C27B0;
+}
+
+/* Light mode highlight */
+::selection {
+  background: #6A1B9A;
+  color: #ffffff;
+}
+
+/* =========================================
+   DARK MODE (Material-Inspired)
+========================================= */
 body.dark-mode {
   background: #121212; /* Material dark baseline */
-  color: rgba(255, 255, 255, 0.87); /* High-emphasis text */
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 17px;     /* bump readability */
 }
 
 /* Masthead / Navigation */
@@ -52,44 +102,49 @@ body.dark-mode .nav a:hover {
   color: #BB86FC !important; /* Purple accent */
 }
 
-/* Links in body */
-body.dark-mode a {
-  color: #BB86FC;
-}
-body.dark-mode a:hover {
-  color: #9C27B0; /* Darker purple hover */
-}
-
-/* Buttons / toggles */
-#theme-toggle {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  background: #1E1E1E;
-  color: #BB86FC;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1.5rem;
-  z-index: 9999;
-  user-select: none;
-  border: 1px solid #333;
-}
-
-/* Text emphasis */
-body.dark-mode p,
-body.dark-mode li,
+/* Headers (purple accent in dark mode) */
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
 body.dark-mode h6 {
+  color: #BB86FC;
+}
+
+/* Links in body */
+body.dark-mode a {
+  color: #BB86FC;
+}
+body.dark-mode a:hover {
+  color: #9C27B0;
+}
+
+/* Text emphasis */
+body.dark-mode p,
+body.dark-mode li {
   color: rgba(255, 255, 255, 0.87);
 }
 
-/* Highlight (text selection) */
+/* Dark mode highlight */
 body.dark-mode ::selection {
   background: #BB86FC;
   color: #121212;
+}
+
+/* =========================================
+   TOGGLE BUTTON
+========================================= */
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #000000;   /* always black */
+  color: #ffffff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 9999;
+  user-select: none;
 }
