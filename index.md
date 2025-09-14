@@ -1,0 +1,77 @@
+---
+title: "PelvicScope"
+layout: splash
+permalink: /
+header:
+  overlay_color: "#2a2a2a"   # dark gray backdrop
+  overlay_filter: "0.5"      # opacity overlay
+  actions:
+    - label: "Start Reading"
+      url: "#trials"
+excerpt: "Urogynecology Landmark Trials — concise, physician-level summaries."
+---
+
+# Welcome to **PelvicScope**
+
+A curated educational resource for **urogynecology landmark trials**, built for physicians, trainees, and researchers.
+
+---
+
+## Why PelvicScope?
+- Concise, evidence-based notes  
+- Organized by trial  
+- Designed for quick review before clinic or OR  
+- Optimized for board prep and teaching  
+
+---
+
+## Featured Trials {#trials}
+- [**ABC Trial**](abc.md) – Sling vs Burch for stress incontinence  
+- [**ATLAS Trial**](atlas.md) – Behavioral therapy vs surgery outcomes  
+- [**OPTIMAL Trial**](optimal.md) – Apical suspension techniques  
+
+---
+
+## About
+PelvicScope is maintained by physicians in training, committed to open-access medical education.  
+
+---
+
+<!-- Dark/Light mode toggle -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const btn = document.createElement("div");
+  btn.innerText = "🌓";
+  btn.className = "mode-toggle";
+  btn.onclick = () => document.body.classList.toggle("dark-mode");
+  document.body.appendChild(btn);
+});
+</script>
+
+<style>
+/* Toggle button styling */
+.mode-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #444;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 9999;
+}
+
+/* Default Light Mode */
+body {
+  background: #ffffff;
+  color: #111111;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #111111;
+  color: #f4f4f4;
+}
+</style>
