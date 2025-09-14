@@ -14,16 +14,15 @@ _A curated vault all about Urogynecology — for students, residents, fellows an
 
 ---
 
-## Urogynecology Landmark Trials
+## Landmark Trials
 - [**ABC Trial**](#) – Sling vs Burch for stress incontinence  
 - [**ATLAS Trial**](#) – Behavioral therapy vs surgery outcomes  
 - [**OPTIMAL Trial**](#) – Apical suspension techniques  
 
 ---
 
-## Urogyn Dot Phrases for EMR (Epic)
-Save time with pre-formatted, concise documentation phrases:  
-
+## Dot Phrases for EMR (*Designed for Epic*)
+*Less time charting, more time with your patients.*
 - [**New & Return Patient H&P**](#)  
 - [**Pessary fitting/maintenance**](#)  
 - [**Post-op Visit**](#)  
@@ -31,9 +30,19 @@ Save time with pre-formatted, concise documentation phrases:
 
 ---
 
-## Common Urogyn Tools
+## Survival Guides
 - [**AUGS POPQ Tool**](https://pop-q.netlify.app/)
+- [**Patient education tools**](#)
+- [**Common on call pages**](#)
+  
+---
+
+## Surgical Atlas
+- Youtube videos, textbook images, etc.
+---
+
+## Career Development/Fellowship prep
 
 ---
 
-##
+## Chat
