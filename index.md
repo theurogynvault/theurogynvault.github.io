@@ -9,7 +9,7 @@ excerpt: "A curated vault all about Urogynecology - for students, residents, fel
 ---
 # Our why
 - Inspired by Dr Jocelyn Fitzgerald's [Landmark Urogyn Trials List](https://landmark-urogyn-trials.glide.page/).
-- - Concise, evidence-based notes designed for a quick review before clinic, the OR, or teaching each other.
+- Concise, evidence-based notes designed for a quick review before clinic, the OR, or teaching each other.
 
 ---
 
