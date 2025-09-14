@@ -1,5 +1,14 @@
-<!-- start custom head snippets -->
+<button id="theme-toggle">🌑</button>
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const savedTheme = localStorage.getItem('theme');
 
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
+  // Apply saved theme on load
+  if (savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    toggleBtn.textContent = '☀️'; // Show sun if dark mode active
+  }
 
-<!-- end custom head snippets -->
+  toggleBtn.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    if (currentTheme === '
