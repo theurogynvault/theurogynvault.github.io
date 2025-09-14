@@ -24,3 +24,45 @@ body.dark-mode h2 {
 h3 {
   font-size: 1.25rem; /* ~20px */
 }
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #eaeaea;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+<button id="theme-toggle" style="border:none; background:none; font-size:1.5rem; cursor:pointer;">
+  🌙
+</button>
+
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const currentTheme = localStorage.getItem('theme');
+
+  if (currentTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    toggleBtn.textContent = '🌞';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    const theme = document.documentElement.getAttribute('data-theme');
+    if (theme === 'dark') {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+      toggleBtn.textContent = '🌙';
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+      toggleBtn.textContent = '🌞';
+    }
+  });
+</script>
