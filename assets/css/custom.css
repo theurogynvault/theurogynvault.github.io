@@ -32,8 +32,6 @@ body {
   }
 }
 
-}
-
 /* Headings */
 h1 { font-size: 2rem; font-weight: 700; color: #6750a4; } /* Headline Large */
 h2 { font-size: 1.75rem; font-weight: 600; color: #6750a4; } /* Headline Med */
@@ -44,8 +42,8 @@ h6 { font-size: 1rem; font-weight: 500; text-transform: uppercase;
      letter-spacing: 0.05em; color: #6750a4; }
 
 /* Links */
-a { color: #6750a4; text-decoration: none; font-weight: 500; }
-a:hover { color: #9c27b0; text-decoration: underline; }
+a { color: #6750a4 !important; text-decoration: none; font-weight: 500; }
+a:hover { color: #9c27b0 !important; text-decoration: underline; }
 
 /* Blockquotes */
 blockquote {
@@ -99,17 +97,14 @@ body.dark-mode h6 {
 
 /* Links */
 body.dark-mode a {
-  color: #bb86fc;
+  color: #bb86fc !important;
 }
 body.dark-mode a:hover {
-  color: #9c27b0;
+  color: #9c27b0 !important;
 }
 
-/* Masthead */
-body.dark-mode .masthead,
-body.dark-mode .masthead__inner-wrap,
-body.dark-mode .nav,
-body.dark-mode .site-title {
+/* Masthead (hide duplicate title + recolor nav) */
+.masthead .site-title {
   display: none !important;
 }
 body.dark-mode .greedy-nav {
@@ -141,9 +136,6 @@ body.dark-mode ::selection { background: #bb86fc; color: #121212; }
    TOGGLE BUTTON (M3 FAB)
 ========================================= */
 #theme-toggle {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
   background: #1c1b1f;
   color: #ffffff;
   width: 44px;
@@ -163,7 +155,13 @@ body.dark-mode ::selection { background: #bb86fc; color: #121212; }
   background: #333333;
 }
 
-/* Search bar styling */
+/* =========================================
+   SEARCH BAR
+========================================= */
+.search__toggle {
+  display: none !important; /* hide unused gray icon */
+}
+
 .search-container {
   display: flex;
   justify-content: center;
@@ -181,7 +179,6 @@ body.dark-mode ::selection { background: #bb86fc; color: #121212; }
   outline: none;
   transition: 0.2s;
 }
-
 #search-input:focus {
   border-color: #6750a4;
   box-shadow: 0 0 4px rgba(103, 80, 164, 0.5);
