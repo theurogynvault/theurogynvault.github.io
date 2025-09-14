@@ -1,28 +1,21 @@
 /* Base font size */
 body {
   font-size: 16px;   /* default is ~18px */
-  line-height: 1.5;  /* adjust spacing */
+  line-height: 1.2;  /* adjust spacing */
 }
 
 /* Headings */
 h1 {
-  font-size: 2rem;   /* ~32px */
-}
-h2 {
-  font-size: 1.5rem; /* ~24px */
-  /* Light mode H2 (teal/blue-green) */
-h2 {
-  color: #008080; /* teal */
+  font-size: 2rem;   /* ~24px */
 }
 
-/* Dark mode H2 (lighter teal for contrast) */
-body.dark-mode h2 {
-  color: #4FD1C5; /* light teal */
+h2 {
+  font-size: 1.5rem; /* ~20px */
 }
 
-}
 h3 {
-  font-size: 1.25rem; /* ~20px */
+  font-size: 1.25rem; /* ~18px */
+  font-style: italic;
 }
 
 :root {
