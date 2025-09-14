@@ -3,7 +3,7 @@ title: "Welcome to 🏦The Urogyn Vault!"
 layout: splash
 permalink: /
 header:
-  overlay_color: "#2a2a2a"
+  overlay_color: "#111111"
   overlay_filter: "0.4"
 excerpt: "A curated vault all about Urogynecology - for students, residents, fellows and lifelong learners."
 ---
@@ -25,7 +25,7 @@ Concise, de-cluttered Urogyn dot phrases to reclaim your time for better patient
 - [**New & Return Patient H&P**]() - New Patient
 - [**Pessary fitting/maintenance**]() - Pessary fitting/maintenance
 - [**Post-op Visit**]() - Post-op visit
-- [**Common Telephone/MyCharts**] - Common Telephone/MyCharts
+- [**Common Telephone/MyCharts**]() - Common Telephone/MyCharts
 
 ---
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(){
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background: #444;
+  background: #000000;
   color: white;
   padding: 0.4rem 0.8rem;
   border-radius: 6px;
@@ -54,10 +54,11 @@ document.addEventListener("DOMContentLoaded", function(){
   font-size: 1.2rem;
   z-index: 9999;
   user-select: none;
+  
   /* Default Light Mode highlight */
 ::selection {
-  background: #111111;
-  color: #ffffff;
+  background: #ffffff;
+  color: #f7f7e9;
 }
 
 /* Dark Mode highlight override */
