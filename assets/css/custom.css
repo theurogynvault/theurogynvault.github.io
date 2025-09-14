@@ -18,42 +18,78 @@ h3 {
   font-style: italic;
 }
 
+/* 🌙 Material-Inspired Dark Theme */
 
-
-
-/* Default (light mode) */
-:root {
-  --bg-color: #f2f2f2;
-  --text-color: #000000;
-  --link-color: #0071bc;
-}
-
-/* Dark mode overrides */
-[data-theme="dark"] {
-  --bg-color: #263238;
-  --text-color: #ffffff;
-  --link-color: #0071bc;
-}
-
-/* Apply variables */
+/* Default Light Mode */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background: #ffffff;
+  color: #111111;
 }
 
-a {
-  color: var(--link-color);
+/* Dark Mode */
+body.dark-mode {
+  background: #121212; /* Material dark baseline */
+  color: rgba(255, 255, 255, 0.87); /* High-emphasis text */
 }
 
-/* Toggle button styling */
+/* Masthead / Navigation */
+body.dark-mode .masthead,
+body.dark-mode .masthead__inner-wrap,
+body.dark-mode .nav,
+body.dark-mode .site-title,
+body.dark-mode .greedy-nav {
+  background: #1E1E1E !important; /* Surface color */
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+
+/* Nav links */
+body.dark-mode .masthead a,
+body.dark-mode .nav a {
+  color: rgba(255, 255, 255, 0.87) !important;
+}
+body.dark-mode .masthead a:hover,
+body.dark-mode .nav a:hover {
+  color: #BB86FC !important; /* Purple accent */
+}
+
+/* Links in body */
+body.dark-mode a {
+  color: #BB86FC;
+}
+body.dark-mode a:hover {
+  color: #9C27B0; /* Darker purple hover */
+}
+
+/* Buttons / toggles */
 #theme-toggle {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  border: none;
-  background: none;
-  font-size: 1.5rem;
+  background: #1E1E1E;
+  color: #BB86FC;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
   cursor: pointer;
-  z-index: 1000;
+  font-size: 1.5rem;
+  z-index: 9999;
+  user-select: none;
+  border: 1px solid #333;
+}
+
+/* Text emphasis */
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Highlight (text selection) */
+body.dark-mode ::selection {
+  background: #BB86FC;
+  color: #121212;
 }
