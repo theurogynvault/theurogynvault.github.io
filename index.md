@@ -1,30 +1,31 @@
 ---
-title: "Welcome to 🏦The Urogyn Vault!"
-layout: splash
-permalink: /
-header:
-  overlay_color: "#111111"
-  overlay_filter: "0.4"
-excerpt: "A curated vault all about Urogynecology - for students, residents, fellows and lifelong learners."
+title: "The Urogyn Vault"
+layout: home
 ---
+
+# 🏛️ The Urogyn Vault
+
+_A curated vault all about Urogynecology — for students, residents, fellows and lifelong learners._
+
+---
+
 ## About
-- Inspired by Dr Jocelyn Fitzgerald's [Landmark Urogyn Trials List](https://landmark-urogyn-trials.glide.page/).
-- Concise, evidence-based notes designed for a quick review before clinic, the OR, or teaching each other.
+- Inspired by Dr. Jocelyn Fitzgerald’s [Landmark Urogyn Trials List](https://example.com).
+- Concise, evidence-based notes designed for quick review before clinic, the OR, or teaching.
 
 ---
 
-## Urogyn Landmark Trials
-Inspired by Dr. Fitzgerald's [Landmark Urogyn Trials List](https://landmark-urogyn-trials.glide.page/)
-- [**ABC Trial**](abc.md) – Sling vs Burch for stress incontinence  
-- [**ATLAS Trial**](atlas.md) – Behavioral therapy vs surgery outcomes  
-- [**OPTIMAL Trial**](optimal.md) – Apical suspension techniques  
+## Urogynecology Landmark Trials
+- [**ABC Trial**](#) – Sling vs Burch for stress incontinence  
+- [**ATLAS Trial**](#) – Behavioral therapy vs surgery outcomes  
+- [**OPTIMAL Trial**](#) – Apical suspension techniques  
 
 ---
-## Urogyn Dot phrases for EMR (Designed for Epic)
-Concise, de-cluttered Urogyn dot phrases to reclaim your time for better patient care.
-- [**New & Return Patient H&P**]() - New Patient
-- [**Pessary fitting/maintenance**]() - Pessary fitting/maintenance
-- [**Post-op Visit**]() - Post-op visit
-- [**Common Telephone/MyCharts**]() - Common Telephone/MyCharts
 
----
+## Urogyn Dot Phrases for EMR (Epic)
+Save time with pre-formatted, concise documentation phrases:  
+
+- [**New & Return Patient H&P**](#)  
+- [**Pessary fitting/maintenance**](#)  
+- [**Post-op Visit**](#)  
+- [**Common Telephone/MyCharts**](#)  
