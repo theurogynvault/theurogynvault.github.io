@@ -29,7 +29,7 @@ include:
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "THE UROGYN VAULT"
+title                    : "🏦 THE UROGYN VAULT"
 title_separator          : #
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : # "The Urogyn Vault"
