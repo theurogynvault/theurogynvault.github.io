@@ -4,15 +4,17 @@
 
 /* Base font size */
 body {
-  font-size: 16px;        /* default text size */
-  line-height: 1.6;       /* good readability */
+  font-size: 16px;        /* consistent in both modes */
+  line-height: 1.6;       /* comfortable readability */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+               "Helvetica Neue", Arial, sans-serif; /* system stack */
 }
 
 /* Headings hierarchy */
 h1 {
   font-size: 2rem;        /* ~32px */
   font-weight: 700;
-  color: #6A1B9A;         /* purple accent (light mode) */
+  color: #6A1B9A;         /* purple (light mode) */
 }
 h2 {
   font-size: 1.5rem;      /* ~24px */
@@ -45,7 +47,7 @@ h6 {
 
 /* Paragraphs & lists */
 p, li {
-  font-size: 1rem;        /* ~16px */
+  font-size: 1rem;        
   line-height: 1.6;
   color: inherit;
 }
@@ -77,9 +79,8 @@ a:hover {
    DARK MODE (Material-Inspired)
 ========================================= */
 body.dark-mode {
-  background: #121212; /* Material dark baseline */
+  background: #121212;
   color: rgba(255, 255, 255, 0.87);
-  font-size: 17px;     /* bump readability */
 }
 
 /* Masthead / Navigation */
@@ -88,21 +89,19 @@ body.dark-mode .masthead__inner-wrap,
 body.dark-mode .nav,
 body.dark-mode .site-title,
 body.dark-mode .greedy-nav {
-  background: #1E1E1E !important; /* Surface color */
+  background: #1E1E1E !important;
   color: rgba(255, 255, 255, 0.87) !important;
 }
-
-/* Nav links */
 body.dark-mode .masthead a,
 body.dark-mode .nav a {
   color: rgba(255, 255, 255, 0.87) !important;
 }
 body.dark-mode .masthead a:hover,
 body.dark-mode .nav a:hover {
-  color: #BB86FC !important; /* Purple accent */
+  color: #BB86FC !important;
 }
 
-/* Headers (purple accent in dark mode) */
+/* Headers in dark mode (purple accent) */
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
@@ -120,13 +119,7 @@ body.dark-mode a:hover {
   color: #9C27B0;
 }
 
-/* Text emphasis */
-body.dark-mode p,
-body.dark-mode li {
-  color: rgba(255, 255, 255, 0.87);
-}
-
-/* Dark mode highlight */
+/* Highlight in dark mode */
 body.dark-mode ::selection {
   background: #BB86FC;
   color: #121212;
@@ -139,7 +132,7 @@ body.dark-mode ::selection {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background: #000000;   /* always black */
+  background: #000000;
   color: #ffffff;
   padding: 0.4rem 0.8rem;
   border-radius: 6px;
