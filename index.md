@@ -26,29 +26,36 @@ _A curated vault all about Urogynecology — for students, residents, fellows an
 - [**New & Return Patient H&P**](#)  
 - [**Pessary fitting/maintenance**](#)  
 - [**Post-op Visit**](#)  
-- [**Common Telephone/MyCharts**](#)  
+- [**Common Telephone/MyCharts**](#)
 
 ---
 
 ## 🧰 Survival Tools
+- [**Common on call pages**](#)
+
+---
+
+## 🌎 AUGS/IUGA Clinical Guidance Links
+*Useful tools to help you and your patients.*
 - [**AUGS POPQ Tool**](https://pop-q.netlify.app/)
-- [**AUGS Clinical Guidanace Documents**](https://www.augs.org/clinical-patient-resources/clinical-guidance-documents/)
+- [**AUGS Clinical Guidance Documents**](https://www.augs.org/clinical-patient-resources/clinical-guidance-documents/)
 - [**AUGS Patient Education**](https://www.voicesforpfd.org/resources/fact-sheets-and-downloads/)
 - [**IUGA Patient Education**](https://www.yourpelvicfloor.org/conditions/)
-- [**Common on call pages**](#)
-  
+
 ---
 
 ## 🦴 Surgical Atlas
+*Steps, anatomy, and pearl for surgeries.*
 - Youtube videos, textbook images, etc.
+  
 ---
 
-## 🚀 Career Development/Fellowship prep
+## 🚀 Career Development
 - ***
   
 ---
 
-## 🗣️ Chat
-- ***
+## 🦪 Pearls of Wisdom
+*Leave a comment or pearl of wisdom.*
 
 ---
