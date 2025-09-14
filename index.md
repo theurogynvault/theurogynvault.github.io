@@ -1,13 +1,10 @@
 ---
-title: "The Urogyn Vault"
+title: "Welcome to The Urogyn Vault!"
 layout: splash
 permalink: /
 header:
   overlay_color: "#2a2a2a"
   overlay_filter: "0.4"
-  actions:
-    - label: "Start Reading"
-      url: "#trials"
 excerpt: "A curated vault all about Urogynecology - for students, residents, fellows and lifelong learners."
 ---
 # Our why
