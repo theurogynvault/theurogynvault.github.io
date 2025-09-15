@@ -2,9 +2,9 @@
    MATERIAL DESIGN 3 (M3) THEME
 ========================================= */
 
-/* Base typography (M3 type scale simplified) */
+/* Base typography */
 body {
-  font-size: 17px; /* unified across light/dark */
+  font-size: 17px;
   line-height: 1.6;
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Helvetica Neue", Arial, sans-serif;
@@ -14,32 +14,36 @@ body {
   padding: 0;
 }
 
-/* Wider text on desktops, normal on mobile */
+/* Page width */
 .page__content,
 .page__inner-wrap,
 .page {
-  max-width: 1200px !important;  /* desktop width */
+  max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 0 1.5rem;
 }
-
 @media (max-width: 768px) {
   .page__content,
   .page__inner-wrap,
   .page {
-    max-width: 95% !important;  /* mobile: nearly full width */
+    max-width: 95% !important;
     padding: 0 1rem;
   }
 }
 
 /* Headings */
-h1 { font-size: 2rem; font-weight: 700; color: #6750a4; } /* Headline Large */
-h2 { font-size: 1.75rem; font-weight: 600; color: #6750a4; } /* Headline Med */
+h1 { font-size: 2rem; font-weight: 700; color: #6750a4; }
+h2 { font-size: 1.75rem; font-weight: 600; color: #6750a4; }
 h3 { font-size: 1.5rem; font-weight: 600; font-style: italic; color: #6750a4; }
 h4 { font-size: 1.25rem; font-weight: 500; color: #6750a4; }
 h5 { font-size: 1.1rem; font-weight: 500; color: #6750a4; }
-h6 { font-size: 1rem; font-weight: 500; text-transform: uppercase;
-     letter-spacing: 0.05em; color: #6750a4; }
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6750a4;
+}
 
 /* Links */
 a { color: #6750a4 !important; text-decoration: none; font-weight: 500; }
@@ -59,14 +63,13 @@ blockquote {
    FOOTER
 ========================================= */
 .site-footer {
-  background: #f3edf7;   /* M3 light surface */
+  background: #f3edf7;
   color: #1c1b1f;
   padding: 2rem 1rem;
   font-size: 0.9rem;
   text-align: center;
   border-top: 1px solid #e0e0e0;
 }
-
 .site-footer a {
   color: #6750a4;
   text-decoration: none;
@@ -78,14 +81,12 @@ blockquote {
 }
 
 /* =========================================
-   DARK MODE (M3 scheme)
+   DARK MODE
 ========================================= */
 body.dark-mode {
   background: #1c1b1f;
   color: #e6e1e5;
 }
-
-/* Headings */
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
@@ -94,53 +95,43 @@ body.dark-mode h5,
 body.dark-mode h6 {
   color: #bb86fc;
 }
-
-/* Links */
-body.dark-mode a {
-  color: #bb86fc !important;
-}
-body.dark-mode a:hover {
-  color: #9c27b0 !important;
-}
-
-/* Masthead (hide duplicate title + recolor nav) */
-.masthead .site-title {
-  display: none !important;
-}
+body.dark-mode a { color: #bb86fc; }
+body.dark-mode a:hover { color: #9c27b0; }
 body.dark-mode .greedy-nav {
   background: #2b2930 !important;
   color: #e6e1e5 !important;
 }
-body.dark-mode .masthead a:hover {
-  color: #bb86fc !important;
-}
-
-/* Footer */
 body.dark-mode .site-footer {
   background: #2b2930;
   color: #e6e1e5;
   border-top: 1px solid #3a3840;
 }
-body.dark-mode .site-footer a {
-  color: #bb86fc;
-}
-body.dark-mode .site-footer a:hover {
-  color: #9c27b0;
-}
+body.dark-mode .site-footer a { color: #bb86fc; }
+body.dark-mode .site-footer a:hover { color: #9c27b0; }
 
 /* Selection */
 ::selection { background: #6750a4; color: #fff; }
 body.dark-mode ::selection { background: #bb86fc; color: #121212; }
 
 /* =========================================
-   TOGGLE BUTTON (M3 FAB)
+   TOOLS (Toggle + Search)
 ========================================= */
+.masthead-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* Theme Toggle Button */
 #theme-toggle {
   background: #1c1b1f;
   color: #ffffff;
   width: 44px;
   height: 44px;
-  border-radius: 50%;   /* circular FAB */
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,35 +142,38 @@ body.dark-mode ::selection { background: #bb86fc; color: #121212; }
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   transition: background 0.3s ease;
 }
-#theme-toggle:hover {
-  background: #333333;
-}
+#theme-toggle:hover { background: #333333; }
 
-/* =========================================
-   SEARCH BAR
-========================================= */
-.search__toggle {
-  display: none !important; /* hide unused gray icon */
+/* Search Icon */
+#search-icon {
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: #6750a4;
+  transition: color 0.2s ease;
 }
+#search-icon:hover { color: #9c27b0; }
 
-.search-container {
-  display: flex;
-  justify-content: center;
-  margin: 0.5rem auto;
-  width: 100%;
-}
-
+/* Hidden search input */
 #search-input {
-  width: 100%;
-  max-width: 500px;
-  padding: 0.6rem 1rem;
-  font-size: 1rem;
+  width: 0;
+  opacity: 0;
+  padding: 0.4rem 0;
+  font-size: 0.9rem;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 6px;
   outline: none;
-  transition: 0.2s;
+  transition: width 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
+
+/* Active state (when 🔍 clicked) */
+#search-input.active {
+  width: 220px;
+  opacity: 1;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Focus state */
 #search-input:focus {
   border-color: #6750a4;
-  box-shadow: 0 0 4px rgba(103, 80, 164, 0.5);
+  box-shadow: 0 0 4px rgba(103, 80, 164, 0.4);
 }
