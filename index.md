@@ -1,9 +1,6 @@
 ---
 layout: single
 title: ""
-toc: true
-toc_sticky: true
-toc_label: "The Vault"
 ---
 
 ## 🏦 The Urogyn Vault
