@@ -1,5 +1,5 @@
 ---
-title: "The Urogyn Vault"
+title: "Home"
 layout: home
 ---
 
