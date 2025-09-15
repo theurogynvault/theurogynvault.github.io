@@ -4,6 +4,7 @@
     const tocTitle = document.querySelector(".toc__title");
 
     if (toc && tocTitle) {
+      toc.classList.remove("open"); // Ensure starts collapsed
       tocTitle.addEventListener("click", function () {
         toc.classList.toggle("open");
       });
