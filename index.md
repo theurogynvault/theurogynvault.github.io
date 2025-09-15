@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "🏦 The Urogyn Vault"
+title: ""
 toc: true
 toc_sticky: true
 toc_label: "The Vault"
