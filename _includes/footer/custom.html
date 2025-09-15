@@ -1,12 +1,15 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const toc = document.querySelector(".toc");
-    const tocTitle = document.querySelector(".toc__title");
+    const tocContainer = document.querySelector(".toc");
+    const tocTitle = tocContainer?.querySelector(".toc__title");
 
-    if (toc && tocTitle) {
-      toc.classList.remove("open"); // Ensure starts collapsed
+    if (tocContainer && tocTitle) {
+      // Start collapsed
+      tocContainer.classList.remove("open");
+
+      // Toggle open/close on click
       tocTitle.addEventListener("click", function () {
-        toc.classList.toggle("open");
+        tocContainer.classList.toggle("open");
       });
     }
   });
