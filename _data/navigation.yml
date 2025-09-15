@@ -1,14 +1,4 @@
-main:
-  - title: "The Vault"
-    url: /   # can point to homepage
-    children:
-      - title: "Quick-Start Guide"
-        url: /quick-start/
-      - title: "Landmark Trials"
-        url: /landmark-trials/
-      - title: "Dot Phrases"
-        url: /dot-phrases/
-      - title: "Surgical Atlas"
-        url: /surgical-atlas/
-      - title: "Clinical Guidance"
-        url: /clinical-guidance/
+- title: "The Vault"
+  url: "#"
+  external: false
+  id: "vault-toggle"   # 👈 Add this line
