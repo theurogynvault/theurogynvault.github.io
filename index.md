@@ -1,11 +1,6 @@
 ## 🏦 The Urogyn Vault
-_A curated vault all about Urogynecology — for students, residents, fellows and lifelong learners._
-
----
-
-## 👋 About
-- Inspired by Dr. Jocelyn Fitzgerald’s [Landmark Urogyn Trials List](https://example.com).
-- Concise, evidence-based notes designed for quick review before clinic, the OR, or teaching.
+*A curated vault all about Urogynecology — for students, residents, fellows and lifelong learners.*
+*Concise, evidence-based notes designed for quick review before clinic, the OR, or teaching.*
 
 ---
 
