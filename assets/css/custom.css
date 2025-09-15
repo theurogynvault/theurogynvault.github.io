@@ -228,34 +228,28 @@ body.dark-mode ::selection {
   margin-right: 0.25rem;
 }
 
-/* FULL PAGE RESET — Fix content shift */
+/* 🔧 Reset layout to true center */
 .wrapper,
-.main,
 .page,
 .page__content,
 .page__inner-wrap,
 .initial-content,
 .site-content {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
+  margin: 0 auto !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
   max-width: 100% !important;
   box-sizing: border-box;
-  text-align: left;
 }
 
+/* 🧽 Nuke any phantom sidebars */
+.sidebar__left,
 .sidebar__right {
   display: none !important;
 }
 
-.toc {
-  display: none !important;
-}
-
-.initial-content {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 0.5rem;
-  text-align: left;
+/* Prevent unexpected padding/margins from theme */
+.layout--single {
+  padding: 0 !important;
+  margin: 0 auto !important;
 }
