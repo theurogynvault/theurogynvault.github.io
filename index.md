@@ -1,6 +1,7 @@
+---
+
 ## 🏦 The Urogyn Vault
-*A curated vault all about Urogynecology — for students, residents, fellows and lifelong learners.*
-*Concise, evidence-based notes designed for quick review before clinic, the OR, or teaching.*
+*A curated vault all about Urogynecology - notes designed for quick review before clinic, the OR, or teaching for students, residents, fellows and lifelong learners.*
 
 ---
 
@@ -12,17 +13,17 @@
 
 ---
 
+## 🧰 Survival Tools
+- [**Common on call pages**](#)
+
+---
+
 ## ⌨️ Dot Phrases for EMR (*Designed for Epic*)
 *Less time charting, more time with your patients.*
 - [**New & Return Patient H&P**](#)  
 - [**Pessary fitting/maintenance**](#)  
 - [**Post-op Visit**](#)  
 - [**Common Telephone/MyCharts**](#)
-
----
-
-## 🧰 Survival Tools
-- [**Common on call pages**](#)
 
 ---
 
