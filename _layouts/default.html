@@ -34,3 +34,35 @@
     {% include scripts.html %}
   </body>
 </html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("h2DropdownBtn");
+  const menu = document.getElementById("h2DropdownMenu");
+  const headers = document.querySelectorAll("h2");
+
+  headers.forEach((h2, index) => {
+    const id = "h2-section-" + index;
+    h2.setAttribute("id", id);
+
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = "#" + id;
+    a.innerText = h2.innerText;
+
+    li.appendChild(a);
+    menu.appendChild(li);
+  });
+
+  btn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
+
+  // Optional: close menu when clicking elsewhere
+  document.addEventListener("click", function (e) {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+      menu.style.display = "none";
+    }
+  });
+});
+</script>
