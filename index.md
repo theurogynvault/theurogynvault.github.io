@@ -1,9 +1,6 @@
 ---
-layout: single      
-classes:
-  - wide
+layout: home
 ---
-
 
 ## 🏦 The Urogyn Vault
 *A curated vault all about Urogynecology - notes designed for quick review before clinic, the OR, or teaching for students, residents, fellows and lifelong learners.*
