@@ -143,3 +143,11 @@ body.dark-mode ::selection { background: #bb86fc; color: #121212; }
   transition: background 0.3s ease;
 }
 #theme-toggle:hover { background: #333333; }
+
+/* Transparent masthead/nav */
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav {
+  background: transparent !important;
+  box-shadow: none !important;
+}
