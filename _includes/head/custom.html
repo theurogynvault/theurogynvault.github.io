@@ -1,9 +1,7 @@
-<!-- 🌙 Dark/Light Mode + Expandable Search -->
+<!-- 🌙 Dark/Light Mode -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const btn = document.getElementById("theme-toggle");
-  const icon = document.getElementById("search-icon");
-  const input = document.getElementById("search-input");
 
   // Apply saved theme
   const savedTheme = localStorage.getItem("theme");
@@ -16,21 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.classList.toggle("dark-mode");
     const isDark = document.body.classList.contains("dark-mode");
     localStorage.setItem("theme", isDark ? "dark" : "light");
-  });
-
-  // Expand search bar on click
-  icon.addEventListener("click", () => {
-    input.classList.toggle("active");
-    if (input.classList.contains("active")) {
-      input.focus();
-    }
-  });
-
-  // Close search bar if clicked outside
-  document.addEventListener("click", (e) => {
-    if (!icon.contains(e.target) && !input.contains(e.target)) {
-      input.classList.remove("active");
-    }
   });
 });
 </script>
