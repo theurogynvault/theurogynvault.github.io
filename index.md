@@ -5,6 +5,7 @@ title: ""
 
 ## 🏦 The Urogyn Vault
 *A curated vault all about Urogynecology - notes designed for quick review before clinic, the OR, or teaching for students, residents, fellows and lifelong learners.*
+- This page acts as the menu for the entire site. Click on headers to access the resource.
 
 ---
 
