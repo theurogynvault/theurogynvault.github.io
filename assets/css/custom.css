@@ -165,24 +165,24 @@ body.dark-mode ::selection { background: #bb86fc; color: #121212; }
   padding: 0.5rem 1rem;
   display: block;
 }
-/* Make TOC collapsed by default */
+
+/* Initially collapse the TOC menu */
 .toc .toc__menu {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding-left: 1rem;
   opacity: 0;
   pointer-events: none;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
-/* When opened */
+/* Expand TOC menu when .open is added */
 .toc.open .toc__menu {
   max-height: 1000px;
   opacity: 1;
   pointer-events: auto;
 }
 
-/* Make the label clickable like a dropdown toggle */
+/* Style the TOC title like a dropdown */
 .toc .toc__title {
   cursor: pointer;
   font-weight: bold;
@@ -190,16 +190,17 @@ body.dark-mode ::selection { background: #bb86fc; color: #121212; }
   padding-right: 1.5rem;
 }
 
-/* Add down arrow indicator */
+/* Add a visual arrow */
 .toc .toc__title::after {
   content: "▼";
   position: absolute;
   right: 0;
   top: 0;
+  font-size: 0.9rem;
   transition: transform 0.3s ease;
 }
 
-/* Flip the arrow when open */
+/* Flip arrow on open */
 .toc.open .toc__title::after {
   transform: rotate(-180deg);
 }
