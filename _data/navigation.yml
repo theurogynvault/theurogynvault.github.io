@@ -1,4 +1,11 @@
 - title: "The Vault"
   url: "#"
-  external: false
-  id: "vault-toggle"   # 👈 Add this line
+  children:
+    - title: "Landmark Trials"
+      url: /landmark-trials/
+    - title: "Survival Tools"
+      url: /survival-tools/
+    - title: "Career Development"
+      url: /career-development/
+    - title: "Surgical Atlas"
+      url: /surgical-atlas/
