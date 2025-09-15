@@ -1,15 +1,33 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const tocContainer = document.querySelector(".toc");
-    const tocTitle = tocContainer?.querySelector(".toc__title");
+    const vaultToggle = document.querySelector("#vault-toggle");
+    const dropdownMenu = document.querySelector("#vault-dropdown");
 
-    if (tocContainer && tocTitle) {
-      // Start collapsed
-      tocContainer.classList.remove("open");
+    if (vaultToggle && dropdownMenu) {
+      // Toggle dropdown visibility
+      vaultToggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+      });
 
-      // Toggle open/close on click
-      tocTitle.addEventListener("click", function () {
-        tocContainer.classList.toggle("open");
+      // Auto-populate with h2 anchors
+      const headings = document.querySelectorAll("h2");
+      headings.forEach(function (heading) {
+        if (heading.id) {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.href = `#${heading.id}`;
+          a.textContent = heading.textContent;
+          li.appendChild(a);
+          dropdownMenu.appendChild(li);
+        }
+      });
+
+      // Close dropdown if clicked outside
+      document.addEventListener("click", function (e) {
+        if (!vaultToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+          dropdownMenu.style.display = "none";
+        }
       });
     }
   });
