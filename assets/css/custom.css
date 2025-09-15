@@ -197,3 +197,18 @@ body.dark-mode ::selection {
 .vault-dropdown-menu li a:hover {
   background: rgba(187, 134, 252, 0.1);
 }
+
+/* Force full-page centering */
+.wrapper,
+.site-content,
+.page,
+.page__content,
+.page__inner-wrap {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+  text-align: left;
+}
