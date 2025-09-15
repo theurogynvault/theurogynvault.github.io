@@ -227,3 +227,35 @@ body.dark-mode ::selection {
   vertical-align: middle;
   margin-right: 0.25rem;
 }
+
+/* FULL PAGE RESET — Fix content shift */
+.wrapper,
+.main,
+.page,
+.page__content,
+.page__inner-wrap,
+.initial-content,
+.site-content {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.sidebar__right {
+  display: none !important;
+}
+
+.toc {
+  display: none !important;
+}
+
+.initial-content {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0.5rem;
+  text-align: left;
+}
