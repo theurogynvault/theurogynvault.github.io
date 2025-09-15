@@ -253,3 +253,48 @@ body.dark-mode ::selection {
   padding: 0 !important;
   margin: 0 auto !important;
 }
+
+/* 🔽 H2 Dropdown Menu Styling */
+.h2-dropdown-container {
+  position: absolute;
+  top: 1.5rem;
+  right: 5rem;
+  z-index: 1000;
+}
+
+#h2DropdownBtn {
+  background-color: #6750a4;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#h2DropdownMenu {
+  display: none;
+  position: absolute;
+  background-color: #2b2930;
+  color: #e6e1e5;
+  min-width: 220px;
+  border: 1px solid #6750a4;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  list-style: none;
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#h2DropdownMenu li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #bb86fc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#h2DropdownMenu li a:hover {
+  background-color: rgba(187, 134, 252, 0.1);
+  color: #ffffff;
+}
