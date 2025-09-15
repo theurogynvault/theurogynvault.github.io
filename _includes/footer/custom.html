@@ -1,1 +1,12 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toc = document.querySelector(".toc");
+    const tocTitle = document.querySelector(".toc__title");
 
+    if (toc && tocTitle) {
+      tocTitle.addEventListener("click", function () {
+        toc.classList.toggle("open");
+      });
+    }
+  });
+</script>
