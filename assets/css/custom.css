@@ -165,21 +165,24 @@ body.dark-mode ::selection { background: #bb86fc; color: #121212; }
   padding: 0.5rem 1rem;
   display: block;
 }
-
-/* Collapsible TOC: initially collapsed */
+/* Make TOC collapsed by default */
 .toc .toc__menu {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
   padding-left: 1rem;
+  opacity: 0;
+  pointer-events: none;
 }
 
-/* Opened TOC */
+/* When opened */
 .toc.open .toc__menu {
-  max-height: 1000px; /* big enough to show all */
+  max-height: 1000px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-/* Label click style */
+/* Make the label clickable like a dropdown toggle */
 .toc .toc__title {
   cursor: pointer;
   font-weight: bold;
@@ -187,20 +190,16 @@ body.dark-mode ::selection { background: #bb86fc; color: #121212; }
   padding-right: 1.5rem;
 }
 
-/* Arrow indicator */
+/* Add down arrow indicator */
 .toc .toc__title::after {
   content: "▼";
   position: absolute;
   right: 0;
+  top: 0;
   transition: transform 0.3s ease;
 }
 
-/* Rotate arrow when open */
+/* Flip the arrow when open */
 .toc.open .toc__title::after {
   transform: rotate(-180deg);
-}
-
-.greedy-nav .visible-links li ul li a:hover {
-  background: rgba(103, 80, 164, 0.1); /* subtle purple hover */
-  color: #9c27b0 !important;
 }
