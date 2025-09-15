@@ -151,3 +151,22 @@ body.dark-mode ::selection { background: #bb86fc; color: #121212; }
   background: transparent !important;
   box-shadow: none !important;
 }
+
+/* Dropdown menu styling */
+.greedy-nav .visible-links li ul {
+  background: inherit !important; /* transparent like masthead */
+  border: 1px solid rgba(103, 80, 164, 0.3); /* purple accent border */
+  border-radius: 6px;
+  padding: 0.5rem 0;
+}
+
+.greedy-nav .visible-links li ul li a {
+  color: #6750a4 !important;  /* purple text */
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.greedy-nav .visible-links li ul li a:hover {
+  background: rgba(103, 80, 164, 0.1); /* subtle purple hover */
+  color: #9c27b0 !important;
+}
