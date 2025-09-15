@@ -18,11 +18,11 @@ body {
 .page__content,
 .page__inner-wrap,
 .page {
-  max-width: 1800px !important;
+  max-width: 1600px !important;
   margin: 0 auto !important;
   padding: 0 1.5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
   .page__content,
   .page__inner-wrap,
   .page {
