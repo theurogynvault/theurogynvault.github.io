@@ -1,4 +1,14 @@
-# main links
 main:
-  - title: "Links"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "The Vault"
+    url: /   # can point to homepage
+    children:
+      - title: "Quick-Start Guide"
+        url: /quick-start/
+      - title: "Landmark Trials"
+        url: /landmark-trials/
+      - title: "Dot Phrases"
+        url: /dot-phrases/
+      - title: "Surgical Atlas"
+        url: /surgical-atlas/
+      - title: "Clinical Guidance"
+        url: /clinical-guidance/
